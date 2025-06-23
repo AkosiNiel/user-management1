@@ -1,0 +1,106 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.navbar-menu li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    color: #1abc9c;
+}
+
+.navbar-welcome {
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+/* Main content container */
+.main-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+/* Alert box */
+.info-alert {
+    padding: 20px;
+    background-color: #e3f2fd;
+    border: 1px solid #90caf9;
+    color: #0d47a1;
+    font-size: 1.1rem;
+    border-radius: 6px;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-welcome {
+        align-self: flex-end;
+    }
+
+    .main-container {
+        padding: 20px;
+    }
+}
