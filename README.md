@@ -1,6 +1,6 @@
 # User Management System (Pure PHP + Pure Css
 
-This project is a pure PHP-based user management system using OOP principles and Bootstrap for UI. It includes login/logout, role-based access (superadmin/user), user CRUD, profile editing, and session-based authentication.
+This project is a pure PHP-based user management system using OOP principles It includes login/logout, role-based access (superadmin/user), user CRUD, profile editing, and session-based authentication.
 
 ---
 
